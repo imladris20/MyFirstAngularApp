@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { HousingLocation } from '../housing-location';
 import { HousingLocationComponent } from '../housing-location/housing-location.component';
 
 @Component({
@@ -20,4 +21,6 @@ import { HousingLocationComponent } from '../housing-location/housing-location.c
   `,
   styleUrl: './home.component.css',
 })
-export class HomeComponent {}
+export class HomeComponent {
+  housingLocationList: HousingLocation[] = [];
+}
