@@ -1,10 +1,11 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { HousingLocationComponent } from '../housing-location/housing-location.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [HousingLocationComponent],
+  imports: [CommonModule, HousingLocationComponent],
   // templateUrl: './home.component.html',
   template: `
     <section>
