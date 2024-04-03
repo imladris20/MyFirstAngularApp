@@ -14,9 +14,10 @@ export class HousingService {
     return (await data.json()) ?? [];
   }
 
-  async getHousingLocationById(id: Number): Promise<HousingLocation[]> {
+  async getHousingLocationById(id: Number): Promise<HousingLocation> {
     const data = await fetch(`${this.baseUrl}?id=${id}`);
-    return (await data.json()) ?? {};
+    const result = (await data.json()) as Array<HousingLocation>;
+    return result[0] ?? {};
   }
 
   submitApplication(firstName: string, lastName: string, email: string) {

@@ -62,8 +62,8 @@ export class DetailsComponent {
     // this.housingLocation = this.housingService.getHousingLocationById(housingLocationId);
     this.housingService
       .getHousingLocationById(housingLocationId)
-      .then((location: HousingLocation[]) => {
-        this.housingLocation = location[0];
+      .then((location: HousingLocation) => {
+        this.housingLocation = location;
       });
   }
 
