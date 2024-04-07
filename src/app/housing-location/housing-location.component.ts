@@ -8,7 +8,7 @@ import { HousingLocation } from '../housing-location';
   standalone: true,
   imports: [CommonModule, RouterModule],
   template: `
-    <section>
+    <section class="listing">
       <img
         class="listing-photo"
         src="{{ housingLocation.photo }}"
