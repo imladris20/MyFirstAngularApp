@@ -21,3 +21,8 @@ button.primary {
   color: white;
   border-radius: 8px;
 }
+
+button.primary:disabled {
+  color: gray;
+  background-color: lightgray;
+}
